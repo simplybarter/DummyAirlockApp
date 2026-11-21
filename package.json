@@ -1,0 +1,12 @@
+{
+  "name": "dummy-devbox-app",
+  "version": "1.0.0",
+  "description": "Test integration application for DevBox MCP control plane",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["devbox", "test", "integration"],
+  "author": "DevBox",
+  "license": "MIT"
+}
