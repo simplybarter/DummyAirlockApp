@@ -1,15 +1,21 @@
-# DummyDevBoxApp
+# DummyDevBoxApp (Fullstack Edition)
 
-This is a test application created to verify the **DevBox MCP Control Plane** integration:
+This is a decoupled full-stack test application created to verify the **DevBox MCP Control Plane** integration:
 
+- **Frontend**: Responsive HTML/CSS dashboard (`public/index.html`) served on `/dashboard` or with browser `Accept: text/html`.
+- **Backend API**:
+  - `GET /` — API telemetry payload (or frontend for browsers)
+  - `GET /api/status` — Live status, uptime, environment config
+  - `GET /api/ping` — Lightweight pong response
+  - `GET /api/health` — Service health check
 - **Internal Port**: 3000 (configurable via `PORT` environment variable)
 - **Host Binding**: `0.0.0.0` (configurable via `HOST` environment variable)
 - **Startup Command**: `npm start` (or `node server.js`)
-- **Zero Dependencies**: Uses standard Node.js `node:http`.
+- **Zero Dependencies**: Pure Node.js standard library (`node:http`, `node:fs`, `node:path`).
 
 ## DevBox Integration Target
 
 - **VM Host**: `barkley`
-- **Guest VM**: `barkley-vm`
+- **Guest VM**: `dummy-devbox-app-vm`
 - **Internal Port**: 3000
-- **External Proxy Port**: 3001 (or allocated dynamically)
+- **External Proxy Port**: 3002 (forwarded via `http://barkley:3002/`)
