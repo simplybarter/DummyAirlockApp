@@ -1,12 +1,12 @@
 {
-  "name": "dummy-devbox-app",
+  "name": "dummy-airlock-app",
   "version": "1.0.0",
-  "description": "Test integration application for DevBox MCP control plane",
+  "description": "Test integration application for AirlockVM MCP control plane",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "keywords": ["devbox", "test", "integration"],
-  "author": "DevBox",
+  "keywords": ["airlock", "test", "integration"],
+  "author": "AirlockVM",
   "license": "MIT"
 }

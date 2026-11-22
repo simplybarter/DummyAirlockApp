@@ -22,7 +22,7 @@ if (fs.existsSync(envPath)) {
 
 const PORT = parseInt(process.env.PORT || '3000', 10);
 const HOST = process.env.HOST || '0.0.0.0';
-const GREETING = process.env.APP_GREETING || 'Hello from DummyDevBoxApp!';
+const GREETING = process.env.APP_GREETING || 'Hello from DummyAirlockApp!';
 const HTML_FILE = path.resolve(__dirname, 'public', 'index.html');
 
 const server = http.createServer((req, res) => {
@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({
       pong: true,
-      service: 'dummy-devbox-backend',
+      service: 'dummy-airlock-backend',
       tier: 'backend',
       timestamp: new Date().toISOString()
     }, null, 2) + '\n');
@@ -104,5 +104,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`[DummyDevBoxApp Fullstack] Server listening on http://${HOST}:${PORT}`);
+  console.log(`[DummyAirlockApp Fullstack] Server listening on http://${HOST}:${PORT}`);
 });

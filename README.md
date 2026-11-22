@@ -1,6 +1,6 @@
-# DummyDevBoxApp (Fullstack Edition)
+# DummyAirlockApp (Fullstack Edition)
 
-This is a decoupled full-stack test application created to verify the **DevBox MCP Control Plane** integration:
+This is a decoupled full-stack test application created to verify the **AirlockVM MCP Control Plane** integration:
 
 - **Frontend**: Responsive HTML/CSS dashboard (`public/index.html`) served on `/dashboard` or with browser `Accept: text/html`.
 - **Backend API**:
@@ -13,9 +13,9 @@ This is a decoupled full-stack test application created to verify the **DevBox M
 - **Startup Command**: `npm start` (or `node server.js`)
 - **Zero Dependencies**: Pure Node.js standard library (`node:http`, `node:fs`, `node:path`).
 
-## DevBox Integration Target
+## AirlockVM Integration Target
 
 - **VM Host**: `barkley`
-- **Guest VM**: `dummy-devbox-app-vm`
+- **Guest VM**: `dummy-airlock-app-vm`
 - **Internal Port**: 3000
 - **External Proxy Port**: 3002 (forwarded via `http://barkley:3002/`)
