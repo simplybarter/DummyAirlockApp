@@ -15,7 +15,7 @@ This is a decoupled full-stack test application created to verify the **AirlockV
 
 ## AirlockVM Integration Target
 
-- **VM Host**: `barkley`
+- **VM Host**: `remotehost`
 - **Guest VM**: `dummy-airlock-app-vm`
 - **Internal Port**: 3000
-- **External Proxy Port**: 3002 (forwarded via `http://barkley:3002/`)
+- **External Proxy Port**: 3002 (forwarded via `http://remotehost:3002/`)
